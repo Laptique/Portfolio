@@ -448,3 +448,17 @@ footer {
       opacity: 1;
     }
   }
+
+
+
+
+/* Styles for the Mobile-View */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+

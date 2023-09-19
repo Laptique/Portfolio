@@ -7,6 +7,8 @@ In here I will focus on showcasing:
 - things about me, my interests etc
   
 To reach the content of this page, use the following link:
+<br>
+
 https://laptique.github.io/Portfolio/docs/home.html
 
 

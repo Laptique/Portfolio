@@ -91,6 +91,20 @@
         </footer>
 
 <script>
+const cards = document.querySelector(".cards");
+cards.addEventListener("click", () => {
+  cards.appendChild(cards.firstElementChild);
+  cards.lastElementChild.className = "animate";
+  cards.children[2].className = "";
+});
+
+
+const cardBACKS = document.querySelector(".cardBACKS");
+cardBACKS.addEventListener("click", () => {
+  cardBACKS.appendChild(cardBACKS.firstElementChild);
+  cardBACKS.lastElementChild.className = "animateBACK";
+  cardBACKS.children[2].className = "";
+});
 
 </script>
     </body>

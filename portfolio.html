@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sebastian Botezatu - Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="media/logo.svg">
+    </head>
+    <body>
+
+        <div class="mainBackground">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="media/backg.mp4" type="video/mp4">
+            </video>
+
+            <nav>
+                <a href="home.html"><img src="media/logo.jpg" class="logo"></a>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <h1>...All fun and games</h1>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="media/Page1.jpg" alt="Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="media/Page12.png" alt="Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="media/Page13.png" alt="Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="media/Page21.png" alt="Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="media/Page22.png" alt="Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="media/Page23.png" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <img src="https://youre.outof.cards/media/uploads/f4/37/f4378642-3108-45d3-a0a2-17e640b1bc28/drg_270.png" alt="" />
+                <img src="https://i.pinimg.com/originals/f2/a3/1a/f2a31ac0b6c0849db298b71838ef534d.png" alt="" />
+                <img src="https://media.giphy.com/media/ksNoLFEgetr4A/giphy.gif" alt="" />
+                <img src="https://cdn.lowgif.com/full/a876262d2da9ae07-amalgamate-hearthstone-cards.gif" alt="" />
+                <img src="https://www.gamespot.com/a/uploads/original/1551/15511094/3052451-tzlsa3o9at4p1458070980016.gif" alt="" />
+                <img src="https://cdn.hearthstonetopdecks.com/wp-content/uploads/2014/03/millhouse-manastorm-200x286.png" alt="" />
+            </div>
+
+
+            <div class="cardBACKS">
+                <img src="https://youre.outof.games/media/uploads/23/9a/239abe12-6023-465e-8bce-8c488b181ca8/cardback_313.png" alt="" />
+                <img src="https://cdn.hearthstonetopdecks.com/wp-content/uploads/2014/06/card-back-eye-of-cthun-201x300.png" alt="" />
+                <img src="https://d.newsweek.com/en/full/1319133/card-back-mark-hakkar-how-get.gif" alt="" />
+                <img src="https://media.hearthpwn.com/attachments/104/160/legend.png" alt="" />
+                <img src="https://youre.outof.games/media/uploads/7d/0c/7d0c6593-ca3a-4e53-bfce-f67e00ea1b3f/cardback_231.png" alt="" />
+                <img src="https://media-hearth.cursecdn.com/attachments/23/2/cardback_43.gif" alt="" />
+            </div>
+
+
+
+        </div>
+        <footer>
+            <ul class="footer-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>© 2023 Sebastian Botezatu</span>
+                </div>
+            
+                <ul class="footer-socials">
+                    <a href="https://www.instagram.com/sebastian_botezatu">
+                        <li>
+                            <img width="24" height="24" src="media/instagram.png"/>
+                            <p>@sebastian_botezatu</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </footer>
+
+<script>
+const cards = document.querySelector(".cards");
+cards.addEventListener("click", () => {
+  cards.appendChild(cards.firstElementChild);
+  cards.lastElementChild.className = "animate";
+  cards.children[2].className = "";
+});
+
+
+const cardBACKS = document.querySelector(".cardBACKS");
+cardBACKS.addEventListener("click", () => {
+  cardBACKS.appendChild(cardBACKS.firstElementChild);
+  cardBACKS.lastElementChild.className = "animateBACK";
+  cardBACKS.children[2].className = "";
+});
+
+</script>
+    </body>
+</html>

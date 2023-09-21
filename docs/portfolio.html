@@ -1,699 +1,139 @@
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body{
-  min-height: 100vh;
-}
-
-
-/*For home.html*/
-.mainBackground {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(26, 107, 212, 0.5),rgba(223, 226, 225, 0.3));
-  position: relative;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-/*For leistungen.html */
-.mainBackground2 {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(201, 214, 255, 0.5),rgba(5, 117, 230, 0.3));
-  /*--background-image: linear-gradient(rgba(5, 117, 230, 0.4), rgba(0, 247, 96, 0.1));--*/
-  position: absolute;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-}
-
-/*Navigation bar */
-nav{
-  width: 100%;
-  height: 11em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 8px 82px 0 rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(5px);
-}
-/*Logo */
-nav .logo{
-  width: 140px;
-  filter: opacity(80%);
-}
-/*Navigation buttons */
-nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-}
-/*Navigation buttons text */
-nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 24px;
-  border: 2px solid #fff;
-  padding: 10px 50px;
-  border-radius: 10px;
-  transition: 0.5s;
-  background-color: rgba(5, 0, 0, 0.137);
-}
-
-/*Navigation buttons "on Hover" effect */
-nav ul li a:hover{
-  -webkit-text-stroke: 1px #faa200;
-}
-
-/*Element: big text in the middle for home.html */
-.content{
-  text-align: center;
-}
-/*Its Text design */
-.content h1{
-  text-decoration: none;
-  font-size: 120px;
-  color: #fff;
-  font-weight: 600;
-  transition: 0.5s;
-}
-/*"On Hover" effect for the text in the middle */
-.content h1:hover{
-  -webkit-text-stroke: 2px #fff;
-  color: transparent;
-}
-/*The button underneath the big text from home.html */
-.content a{
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  font-size: 24px;
-  border: 4px solid #faa200;
-  padding: 14px 70px ;
-  border-radius: 10px;
-  margin-top: 100px;
-  transition: 0.5s;
-  background-color: rgba(5, 0, 0, 0.137);
-}
-/*"On Hover" effect for the button */
-.content a:hover{
-  -webkit-text-stroke: 0.5px #fa6900;
-}
-/* */
-/* */
-/* */
-/* */
-/*The background Video from index.html */
-.back-video{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-/*Commands to keep the minimum aspect-ratio of the background video */
-@media (min-aspect-ratio: 16/9){
-  .back-video{
-      width: 100%;
-      height: auto;
-  }
-}
-/*Commands to keep the maximum aspect-ratio of the background video */
-@media (max-aspect-ratio: 16/9){
-  .back-video{
-      width: auto;
-      height: 100%;
-  }
-}
-/* */
-/* */
-/* */
-
-footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.footer-nav {
-  justify-content: center;
-  border-bottom: 2px;
-  border-color: #DDDDDD;
-  border-bottom-style: solid;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.footer-nav li a {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-decoration: none;
-  color: #f5ae78;
-}
-
-.footer-nav li a:hover {
-  color: #faa200;
-}
-
-.footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.footer-copyright {
-  display: flex;
-  align-items: center;
-}
-
-.footer-socials {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: end;
-}
-
-.footer-socials a {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-decoration: none;
-  text-align: center;
-  height: 24px;
-}
-
-.footer-socials a li p {
-  color: #9d00ad;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: inline-block;
-}
-
-.footer-socials li {
-  margin-left: 1rem;
-}
-
-#features {
-  padding-top: 50px;
-}
-
-#features h2 {
-  margin-top: 25px;
-  height: 75px;
-}
-
-#features ul {
-  justify-content: center;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  text-align: center;
-}
-
-#features ul li {
-  width: 200px;
-  height: 350px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.feature-text{
-
-}
-
-.feature-image{
-}
-
-#section-contact {
-  background-color: #f5ebd7;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-#section-contact p {
-  display: inline-block;
-  font-size: 30px;
-  margin-top: auto;
-  margin-bottom:auto;
-}
-
-#section-contact a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  border: 4px solid #fa6900;
-  color: #000;
-  padding: 14px 70px;
-  border-radius: 50px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 40px;
-  transition: 0.5s;
-}
-
-#section-contact a:hover {
-  -webkit-text-stroke: 0.5px #fa6900;
-}
-
-#section-contact div {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-
-
-/* Image Gallery Styles */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px auto;
-  max-width: 1000px;
-}
-
-.gallery-item {
-  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
-  margin-bottom: 20px;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-  cursor: pointer;
-  height: 100%;
-}
-
-.gallery-item img:hover {
-  transform: scale(2.05);
-}
-
-
-
-
-
-
-.cards {
-  left: 20em;
-  margin-top: 50em;
-  position: absolute;
-  width: 310px;
-  height: 460px;
-  transform: rotate(-30deg) skew(25deg) scale(0.5);
-  background: rgba(0, 0, 0, 0.288);
-  transition: 0.5s;
-  border-radius: 25px;
-}
-.cards:hover img:nth-child(6) {
-  transform: translate(200px, -200px);
-}
-
-.cards:hover img:nth-child(5) {
-  transform: translate(180px, -180px);
-}
-
-.cards:hover img:nth-child(4) {
-  transform: translate(160px, -160px);
-}
-.cards:hover img:nth-child(3) {
-  transform: translate(120px, -120px);
-  opacity: 0.8;
-}
-.cards:hover img:nth-child(2) {
-  transform: translate(80px, -80px);
-  opacity: 0.6;
-}
-.cards:hover img:nth-child(1) {
-  transform: translate(40px, -40px);
-  opacity: 0.4;
-}
-
-.cards img {
-  width: 100%;
-  position: absolute;
-  transition: 0.5s;
-}
-
-.animate {
-  animation: 1.5s animate ease;
-}
-
-@keyframes animate {
-  0% {
-    transform: translate(40px, -40px);
-    left: 0;
-    opacity: 0.8;
-  }
-  20% {
-    transform: translate(40px, -40px);
-    left: -360px;
-  }
-  80% {
-    transform: translate(120px, -120px);
-    left: -360px;
-  }
-  100% {
-    transform: translate(160px, -160px);
-    left: 0;
-    opacity: 1;
-  }
-}
-
-
-
-.cardBACKS {
-  right: 20em;
-  margin-top: 50em;
-  position: absolute;
-  width: 300px;
-  height: 460px;
-  transform: rotate(30deg) skew(-25deg) scale(0.5);
-  background: rgba(0, 0, 0, 0.288);
-  border-radius: 25px;
-
-  transition: 0.5s;
-}
-.cardBACKS:hover img:nth-child(6) {
-  transform: translate(-200px, -200px);
-}
-
-.cardBACKS:hover img:nth-child(5) {
-  transform: translate(-180px, -180px);
-}
-
-.cardBACKS:hover img:nth-child(4) {
-  transform: translate(-160px, -160px);
-}
-.cardBACKS:hover img:nth-child(3) {
-  transform: translate(-120px, -120px);
-  opacity: 0.8;
-}
-.cardBACKS:hover img:nth-child(2) {
-  transform: translate(-80px, -80px);
-  opacity: 0.6;
-}
-.cardBACKS:hover img:nth-child(1) {
-  transform: translate(-40px, -40px);
-  opacity: 0.4;
-}
-
-.cardBACKS img {
-  width: 100%;
-  position: absolute;
-  transition: 0.5s;
-}
-
-.animateBACK {
-  animation: 1.5s animateBACK ease;
-}
-
-@keyframes animateBACK {
-  0% {
-    transform: translate(-40px, -40px);
-    left: 0;
-    opacity: 0.8;
-  }
-  20% {
-    transform: translate(-40px, -40px);
-    left: 360px;
-  }
-  80% {
-    transform: translate(-120px, -120px);
-    left: 360px;
-  }
-  100% {
-    transform: translate(-160px, -160px);
-    left: 0;
-    opacity: 1;
-  }
-}
-
-
-
-
-/*Styles for the Mobile-View */
-.nav-links {
-list-style: none;
-display: flex;
-}
-
-.nav-links li {
-margin-left: 40px;
-}
-
-
-
-
-
-/* Styles for the Contact Me section */
-#section-contact {
-  background-color: #f5ebd7;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-#section-contact p {
-  font-size: 30px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-#section-contact a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  border: 4px solid #fa6900;
-  color: #000;
-  padding: 14px 70px;
-  border-radius: 50px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  transition: 0.5s;
-}
-
-#section-contact a:hover {
-  -webkit-text-stroke: 0.5px #fa6900;
-  background-color: #fa6900;
-  color: #fff;
-}
-
-#section-contact div {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-
-
-
-/*"About Me" styles */
-.about-me-section {
-  background-color: rgba(5, 0, 0, 0.35);
-  padding: 50px;
-  text-align: center;
-  box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.35);
-  border-radius: 10px;
-  width: 100vh;
-  border: 2px solid #f5ebd7;
-  position: relative;
-  display: box;
-  margin-top: 200px;
-}
-
-.about-me-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color:#DDDDDD;
-}
-
-.about-me-text {
-  flex: 1;
-  text-align: left;
-}
-
-.about-me-text h2 {
- padding-bottom: 10px;
-}
-
-.about-me-image {
-  flex: 1;
-  max-width: 300px;
-  position: relative;
-}
-
-.about-me-image img {
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s;
-  cursor: pointer;
-}
-
-.zoom-on-hover:hover {
-  transform: scale(1.25); /* Increase the size on hover */
-}
-
-
-/* Gallery styles from "About Me" page */
-.gallery-me {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.gallery-me h2{
-  color:#DDDDDD;
-}
-
-.gallery-aboutme {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.gallery-item-aboutme {
-  flex: 0 0 calc(33.33% - 10px);
-  margin-bottom: 20px;
-}
-
-.gallery-item-aboutme img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-  cursor: pointer;
-}
-
-.gallery-item-aboutme img:hover {
-  transform: scale(1.80); /* Increase the size on hover */
-}
-
-
-
-/*For the pupup contact form*/
-.btn {
-  padding: 15px 30px;
-  cursor: pointer;
-  outline: none;
-  background-color: transparent;
-  border: 1px solid #111;
-  color: #111;
-  font-family: 'Century Gothic';
-  font-size: 15px;
-  transition: all 0.3s;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #111;
-  color: #fff;
-  transform: translateY(-8px);
-}
-
-.form-modal {
-  width: 100%; height: 100%;
-  position: absolute;
-  top: 0; left: 0;
-  background-color: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  width: 450px;
-  background-color: #faa200;
-  padding: 20px;
-  position: relative;
-  animation: visible 1s 1;
-  animation-fill-mode: forwards;
-  border-radius: 5px;
-}
-
-@keyframes visible {
-  from{
-      transform: scale(0);
-      opacity: 0;
-  }
-  
-  to{
-      transform: scale(1);
-      opacity: 1;
-  }
-}
-
-.content-wrapper {
-  opacity: 0;
-  animation: toRight 1s 500ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes toRight {
-  from{
-      opacity: 0;
-      transform: translateX(-100px);
-  }
-  
-  to{
-      opacity: 1;
-      transform: translateX(0)
-  }
-}
-
-.close {
-  position: absolute;
-  font-size: 30px;
-  transform: rotate(45deg);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.close:hover {
-  transform: rotate(-45deg) scale(1.3);
-}
-
-input, textarea {
-  width: 60%;
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #111;
-  font-family: 'Century Gothic';
-  border-radius: 5px;
-}
-
-textarea {
-  max-width: 60%; min-height: 100px;
-}
-
-.submit {
-  display: block;
-  margin: 30px auto 0;
-  background-color: #fff;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sebastian Botezatu - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="media/logo.jpg" />
+  </head>
+  <body>
+    <div class="mainBackground">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="media/backg.mp4" type="video/mp4" />
+      </video>
+
+      <nav>
+        <a href="index.html"><img src="media/logo.jpg" class="logo" /></a>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h1>...All fun and games</h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="media/Page1.jpg" alt="Image 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="media/Page12.png" alt="Image 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="media/Page13.png" alt="Image 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="media/page21.png" alt="Image 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="media/page22.png" alt="Image 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="media/page23.png" alt="Image 3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img
+          src="https://youre.outof.cards/media/uploads/f4/37/f4378642-3108-45d3-a0a2-17e640b1bc28/drg_270.png"
+          alt=""
+        />
+        <img
+          src="https://i.pinimg.com/originals/f2/a3/1a/f2a31ac0b6c0849db298b71838ef534d.png"
+          alt=""
+        />
+        <img
+          src="https://media.giphy.com/media/ksNoLFEgetr4A/giphy.gif"
+          alt=""
+        />
+        <img
+          src="https://cdn.lowgif.com/full/a876262d2da9ae07-amalgamate-hearthstone-cards.gif"
+          alt=""
+        />
+        <img
+          src="https://www.gamespot.com/a/uploads/original/1551/15511094/3052451-tzlsa3o9at4p1458070980016.gif"
+          alt=""
+        />
+        <img
+          src="https://cdn.hearthstonetopdecks.com/wp-content/uploads/2014/03/millhouse-manastorm-200x286.png"
+          alt=""
+        />
+      </div>
+
+      <div class="cardBACKS">
+        <img
+          src="https://youre.outof.games/media/uploads/23/9a/239abe12-6023-465e-8bce-8c488b181ca8/cardback_313.png"
+          alt=""
+        />
+        <img
+          src="https://cdn.hearthstonetopdecks.com/wp-content/uploads/2014/06/card-back-eye-of-cthun-201x300.png"
+          alt=""
+        />
+        <img
+          src="https://d.newsweek.com/en/full/1319133/card-back-mark-hakkar-how-get.gif"
+          alt=""
+        />
+        <img
+          src="https://media.hearthpwn.com/attachments/104/160/legend.png"
+          alt=""
+        />
+        <img
+          src="https://youre.outof.games/media/uploads/7d/0c/7d0c6593-ca3a-4e53-bfce-f67e00ea1b3f/cardback_231.png"
+          alt=""
+        />
+        <img
+          src="https://media-hearth.cursecdn.com/attachments/23/2/cardback_43.gif"
+          alt=""
+        />
+      </div>
+    </div>
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <span>© 2023 Sebastian Botezatu</span>
+        </div>
+
+        <ul class="footer-socials">
+          <a href="https://www.instagram.com/sebastian_botezatu">
+            <li>
+              <img width="24" height="24" src="media/instagram.png" />
+              <p>@sebastian_botezatu</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const cards = document.querySelector(".cards");
+      cards.addEventListener("click", () => {
+        cards.appendChild(cards.firstElementChild);
+        cards.lastElementChild.className = "animate";
+        cards.children[2].className = "";
+      });
+
+      const cardBACKS = document.querySelector(".cardBACKS");
+      cardBACKS.addEventListener("click", () => {
+        cardBACKS.appendChild(cardBACKS.firstElementChild);
+        cardBACKS.lastElementChild.className = "animateBACK";
+        cardBACKS.children[2].className = "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Sebastian Botezatu - Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="media/logo.jpg">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="media/logo.jpg" />
+  </head>
+  <body>
+    <div class="mainBackground">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="media/background_video.mp4" type="video/mp4" />
+      </video>
 
-<div class="mainBackground">
-    <video autoplay loop muted plays-inline class="back-video">
-        <source src="media/background_video.mp4" type="video/mp4">
-    </video>
-
-    <nav>
-        <a href="index.html"><img src="media/logo.jpg" class="logo"></a>
+      <nav>
+        <a href="index.html"><img src="media/logo.jpg" class="logo" /></a>
         <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <div class="content">
+      <div class="content">
         <h1>Sebastian Botezatu</h1>
-        <a href="contact.html">Who am I</a>
+        <a href="about.html">Who am I</a>
+      </div>
     </div>
-</div>
-        
-        <section id="section-contact">
-            <div>
-                <p>Send me a message!</p>
-                <a href="kontakt.html">Contact</a>
-            </div>
-        </section>
-        <footer>
-            <ul class="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <span>© 2023 Sebastian Botezatu</span>
-                </div>
-            
-                <ul class="footer-socials">
-                    <a href="https://www.instagram.com/sebastian_botezatu">
-                        <li>
-                            <img width="24" height="24" src="media/instagram.png"/>
-                            <p>@sebastian_botezatu</p>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-        </footer>
-    </body>
+
+    <div id="section-contact">
+      <p>Have a question or want to collaborate? Feel free to reach out!</p>
+      <a class="signUp btn">Contact Me</a>
+
+      <!--Pop-up formular for "Contact Me"-->
+      <div class="form-modal">
+        <div class="modal-content">
+          <div class="content-wrapper">
+            <div class="close">+</div>
+            <form
+              action="https://formsubmit.co/botezseby123@gmail.com"
+              method="POST"
+            >
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input type="email" name="email" placeholder="E-Mail" required />
+              <textarea
+                name="message"
+                class="massage"
+                placehoder="Massage"
+              ></textarea>
+              <button type="submit" class="submit btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <span>© 2023 Sebastian Botezatu</span>
+        </div>
+
+        <ul class="footer-socials">
+          <a href="https://www.instagram.com/sebastian_botezatu">
+            <li>
+              <img width="24" height="24" src="media/instagram.png" />
+              <p>@sebastian_botezatu</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const signUp = document.querySelector(".signUp");
+      const modal = document.querySelector(".form-modal");
+      const close = document.querySelector(".close");
+
+      signUp.addEventListener("click", () => {
+        modal.style.display = "flex";
+      });
+
+      close.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    </script>
+  </body>
 </html>

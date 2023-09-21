@@ -8,7 +8,7 @@ In here I will focus on showcasing:
   
 To reach the content of this page, use the following link:
 
-https://laptique.github.io/Portfolio/docs/home.html
+[https://laptique.github.io/Portfolio/docs/home.html](https://laptique.github.io/Portfolio/index.html)https://laptique.github.io/Portfolio/index.html
 
 
 Thank you for stopping by! :) 
